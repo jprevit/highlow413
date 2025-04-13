@@ -1,0 +1,46 @@
+body {
+    background-color: green;
+    margin: 0px;
+}
+
+header {
+    background-color: aliceblue;
+    text-align: center;
+
+    h1 {
+        margin: 0px;
+        padding: .5em;
+    }
+}
+
+main {
+    color: aliceblue
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.mystery-card {
+    margin: 1em;
+    width: 255px;
+    height: 355px;
+    display: flex;
+    justify-content: end;
+
+    img {
+        width: 100%;
+    }
+}
+
+.output {
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+
+.user-input {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
