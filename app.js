@@ -15,8 +15,10 @@ let maxNumber = 10
 let targetNumber = Math.ceil(Math.random() * maxNumber)
 let outputElm = document.getElementById('output')
 let userInputElm = document.getElementById('user-input')
+let guessCount = 0
 
 function checkGuess(guess) {
+    guessCount++
 
     if (guess == targetNumber) {
         // console.log(`Congratulations! You've guessed it! ${guess} was right`);
@@ -48,5 +50,7 @@ function resetGame() {
     outputElm.innerHTML = `<p>Guess a number!</p>`
     drawButtons()
 }
+
+let list = [1, 'banana', 6.5]
 
 drawButtons()
